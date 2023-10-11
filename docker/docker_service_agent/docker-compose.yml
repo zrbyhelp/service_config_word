@@ -1,0 +1,9 @@
+services:
+  nginx:
+    image: nginx
+    container_name: api-service-agent
+    ports:
+      - 3080:80
+      - 23231:23231
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
